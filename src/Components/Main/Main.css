@@ -40,8 +40,21 @@ body {
   transform: rotate(-45deg);
   right: -24px;
   top: -10px;
+  animation: startLeftLine 0.3s ease;
 }
 
+@keyframes startLeftLine {
+  0% {
+    right: 0;
+    top: 0;
+    width: 1px;
+  }
+  100% {
+    width: 100%;
+    right: -24px;
+    top: -10px;
+  }
+}
 .right {
   right: -150%;
   bottom: -150%;
@@ -56,8 +69,21 @@ body {
   transform: rotate(45deg);
   left: -24px;
   top: -10px;
+  animation: 0.3s startRightLine ease;
 }
 
+@keyframes startRightLine {
+  0% {
+    left: 0;
+    top: 0;
+    width: 1px;
+  }
+  100% {
+    width: 100%;
+    left: -24px;
+    top: -10px;
+  }
+}
 @keyframes start {
   0% {
     opacity: 0;

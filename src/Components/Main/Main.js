@@ -15,7 +15,7 @@ const Main = () => {
 
             let bin = document.createElement('div');
             bin.textContent = Math.floor(Math.random() * (100 - (-100)) + (-100));
-            if (bin.textContent > binars[binars.length-1].textContent) {
+            if (+bin.textContent > +binars[binars.length-1].textContent) {
                 bin.className = "binar right"
             } else {
                 bin.className = "binar left"
